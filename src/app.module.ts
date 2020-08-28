@@ -3,7 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { MaratonaController } from './maratona/maratona.controller';
+import { CategoriesController } from './categories/categories.controller';
 
 @Module({
   imports: [
@@ -14,7 +14,7 @@ import { MaratonaController } from './maratona/maratona.controller';
       synchronize: true,
     })
   ],
-  controllers: [AppController, MaratonaController],
+  controllers: [AppController, CategoriesController],
   providers: [AppService],
 })
 export class AppModule {}
